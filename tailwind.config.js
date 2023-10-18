@@ -62,6 +62,10 @@ export default {
       "secondary-1": "#999966"
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require('flowbite/plugin')
+  ],
+
 }
 
