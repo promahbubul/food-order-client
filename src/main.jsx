@@ -5,6 +5,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import MainLayout from './Layout/MainLayout.jsx'
 import HomePage from './Pages/HomePage.jsx'
 import AboutPage from './Pages/AboutPage.jsx'
+import SignInPage from './Pages/SignInPage'
+import SignUpPage from './Pages/SignUpPage'
+import ContactPage from './Pages/ContactPage'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,20 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <AboutPage />
+      }
+      ,
+      {
+        path: '/contact',
+        element: <ContactPage />
+      }
+      ,
+      {
+        path: '/signin',
+        element: <SignInPage />
+      },
+      {
+        path: '/signup',
+        element: <SignUpPage />
       }
     ]
   }
