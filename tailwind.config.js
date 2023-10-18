@@ -5,6 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'inter': ['Inter', "sans - serif"],
+      'geologica': ['Geologica', "sans - serif"],
+      'great-vibes': ['Great Vibes', "cursive"],
+    },
     colors: {
       "gray-1": "#333333",
       "gray-2": "#4F4F4F",
