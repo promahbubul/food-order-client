@@ -5,7 +5,7 @@ const AboutUs = () => {
         <div>
             <div className="">
                 <h4 className="text-heading-4 font-heading-4 text-primary-2">
-                    About us
+                    Comtact us
                 </h4>
             </div>
         </div>
