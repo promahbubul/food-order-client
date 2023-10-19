@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { CiSearch } from 'react-icons/ci';
+
 
 const Navbar = () => {
     const NavLinks = <>
@@ -13,7 +15,7 @@ const Navbar = () => {
     return (
 
         <>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 bg-[#0D0D0D]">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -31,7 +33,10 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <div className="relative items-center  flex flex-row">
+                        <input className=' bg-[#0D0D0D] border rounded-full border-primary-2 text-white px-3 py-1' type="text" name="search" id="search" placeholder='Search...' />
+                        <CiSearch className='relative right-5 text-white ' />
+                    </div>
                 </div>
             </div>
         </>
