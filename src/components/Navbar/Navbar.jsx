@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { CiSearch } from 'react-icons/ci';
-import logo from '../../assets/images/'
+import logo from '../../assets/images/Foodtuck.png'
 
 
 const Navbar = () => {
@@ -16,10 +16,10 @@ const Navbar = () => {
     return (
 
         <>
+            <div className='text-center pt-10'>
+                <NavLink to={'/'}><img className='mx-auto' src={logo} /></NavLink>
+            </div>
             <div className="navbar bg-[#0D0D0D] text-white">
-                <div>
-                    <NavLink to={'/'}><img src='' /></NavLink>
-                </div>
                 <div className="">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
