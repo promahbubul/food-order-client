@@ -8,7 +8,7 @@ import { FaTwitter } from 'react-icons/fa';
 const Banner = () => {
     return (
         <div className='flex flex-row items-center mt-14 gap-14 '>
-            <div className="flex flex-col items-center gap-5">
+            <div className="flex md:w-2 flex-col items-center gap-5">
                 <div className='w-[2px] bg-white h-40' ></div>
                 <div className="flex flex-col gap-5">
                     <a href="">
@@ -21,7 +21,7 @@ const Banner = () => {
                 </div>
                 <div className='w-[2px] bg-white h-40' ></div>
             </div>
-            <div className="w-full">
+            <div className="md:w-5/12">
                 <h4 className="font-great-vibes text-heading-4 text-primary-2 mb-2">Its Quick & Amusing!</h4>
                 <h2 className="text-heading-1 font-overpress font-bold leading-heading-1 mb-8">
                     <span className='text-primary-2 '>Th</span>e Art of speed<br></br> food Quality
@@ -31,7 +31,7 @@ const Banner = () => {
                     Varius sed pharetra dictum neque massa congue</p>
                 <button className='bg-primary-2 px-14 py-3 rounded-full mt-8'>See Menu</button>
             </div>
-            <div className="w-full">
+            <div className="md:w-5/12">
                 <img src={bannerImage} alt="" />          </div>
         </div>
     )
