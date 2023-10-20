@@ -1,6 +1,5 @@
-import React from 'react'
-import bannerImage from '../../assets/images/Image.png'
-import { FaCheck } from 'react-icons/fa';
+import React from "react";
+import { FaCheck } from "react-icons/fa";
 import about1 from "../../assets/images/about1.png";
 import about2 from "../../assets/images/about2.png";
 import about3 from "../../assets/images/about3.png";
@@ -47,17 +46,17 @@ const AboutUs = () => {
           See Menu
         </button>
       </div>
-      <div className="md:w-5/12 flex flex-col gap-4">
-        <div className="">
-          <img src={about1} alt="" />
+      <div className="md:w-5/12 flex flex-col gap-4 box-border">
+        <div className="w-full">
+          <img className="w-full" src={about1} alt="" />
         </div>
-        <div className="flex flex-row w-full gap-4">
-          <img className='w-1/2' src={about2} alt="" />
-          <img className='w-1/2' src={about3} alt="" />
+        <div className="flex flex-row w-full justify-between ">
+          <img className="w-[48%]" src={about2} alt="" />
+          <img className="w-[48%]" src={about3} alt="" />
         </div>
       </div>
     </div>
   );
 };
 
-export default AboutUs
+export default AboutUs;
