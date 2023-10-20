@@ -9,7 +9,7 @@ import category4 from "../../assets/images/category4.png";
 
 const FoodCategory = () => {
   return (
-    <div className="items-center mt-20 py-5 gap-14 text-center">
+    <div className="items-center  max-w-6xl  mx-auto mt-20 py-5 gap-14 text-center">
       <h4 className="font-great-vibes text-heading-4 text-primary-2 mb-2">
         Food Category
       </h4>
