@@ -7,7 +7,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+
 
 const BottomFooter = () => {
   return (
@@ -27,7 +27,7 @@ const BottomFooter = () => {
             <FaInstagram className=" text-gray-2 text-lg" />
           </div>
           <div className="p-1 rounded-sm bg-white">
-            <FaYoutube className=" text-gray-2 text-lg" />
+            <FaYoutube className=" text-primary-2 text-lg" />
           </div>
           <div className="p-1 rounded-sm bg-white">
             <FaPinterestP className=" text-gray-2 text-lg" />

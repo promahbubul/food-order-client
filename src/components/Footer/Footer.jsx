@@ -2,6 +2,7 @@ import React from "react";
 import clock from "../../assets/images/clock.png";
 import { Link } from "react-router-dom";
 import footerItem1 from "../../assets/images/footer-item1.png";
+import footerBg from "../../assets/images/footerbg.png";
 
 const Footer = () => {
   return (
@@ -123,6 +124,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <img
+        src={footerBg}
+        alt=""
+        className="absolute right-0 w-[80px] mt-36 "
+      />
     </div>
   );
 };
