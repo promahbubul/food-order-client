@@ -5,7 +5,7 @@ import { FaCheck } from 'react-icons/fa';
 
 const AboutUs = () => {
     return (
-        <div className='flex flex-row items-center mt-14 gap-14 '>
+        <div className='flex flex-row items-center mt-36 gap-14 '>
             <div className="flex md:w-2 flex-col items-center gap-5">
             </div>
             <div className="md:w-5/12">
