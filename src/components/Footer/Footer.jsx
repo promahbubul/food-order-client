@@ -6,7 +6,7 @@ import footerBg from "../../assets/images/footerbg.png";
 
 const Footer = () => {
   return (
-    <div className="py-40  max-w-6xl  mx-auto">
+    <div className="py-10 mt-36l  max-w-6xl  mx-auto">
       <div className="flex flex-row justify-around items-center border-primary-2 pb-14 mb-16 border-b">
         <div className="">
           <h4 className="text-heading-4 font-bold leading-heading-4 mb-4">
@@ -124,11 +124,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <img
-        src={footerBg}
-        alt=""
-        className="absolute right-0 w-[80px] mt-36 "
-      />
     </div>
   );
 };

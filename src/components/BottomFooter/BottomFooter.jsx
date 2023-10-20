@@ -17,21 +17,31 @@ const BottomFooter = () => {
           Copyright © 2022 by Ayeman. All Rights Reserved.
         </p>
         <div className="flex flex-row gap-3">
-          <div className="p-1 rounded-sm bg-white">
-            <FaFacebookF className=" text-gray-2 text-lg" />
-          </div>
-          <div className="p-1 rounded-sm bg-white">
-            <FaTwitter className=" text-gray-2 text-lg" />
-          </div>
-          <div className="p-1 rounded-sm bg-white">
-            <FaInstagram className=" text-gray-2 text-lg" />
-          </div>
-          <div className="p-1 rounded-sm bg-white">
-            <FaYoutube className=" text-primary-2 text-lg" />
-          </div>
-          <div className="p-1 rounded-sm bg-white">
-            <FaPinterestP className=" text-gray-2 text-lg" />
-          </div>
+          <a href="">
+            <div className="p-1 rounded-sm bg-white">
+              <FaFacebookF className=" text-gray-2 text-lg" />
+            </div>
+          </a>
+          <a href="">
+            <div className="p-1 rounded-sm bg-white">
+              <FaTwitter className=" text-gray-2 text-lg" />
+            </div>
+          </a>
+          <a href="">
+            <div className="p-1 rounded-sm bg-white">
+              <FaInstagram className=" text-gray-2 text-lg" />
+            </div>
+          </a>
+          <a href="">
+            <div className="p-1 rounded-sm bg-white">
+              <FaYoutube className=" text-primary-2 text-lg" />
+            </div>
+          </a>
+          <a href="">
+            <div className="p-1 rounded-sm bg-white">
+              <FaPinterestP className=" text-gray-2 text-lg" />
+            </div>
+          </a>
         </div>
       </div>
     </div>

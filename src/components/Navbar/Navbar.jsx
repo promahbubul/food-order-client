@@ -20,7 +20,7 @@ const Navbar = () => {
             <img className="mx-auto" src={logo} />
           </NavLink>
         </div>
-        <div className="navbar bg-[#0D0D0D] text-white">
+        <div className="navbar bg-[#0D0D0D] max-w-6xl mx-auto text-white">
           <div className="">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
