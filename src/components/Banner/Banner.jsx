@@ -1,13 +1,13 @@
-import React from 'react'
-import bannerImage from '../../assets/images/Image.png'
-import { FaFacebookF } from 'react-icons/fa';
-import { FaPinterestP } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
-
+import React from "react";
+import bannerImage from "../../assets/images/Image.png";
+import { FaFacebookF } from "react-icons/fa";
+import { FaPinterestP } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const Banner = () => {
-    return (
-      <div className="flex flex-row  max-w-6xl  mx-auto items-center mt-14 gap-14 ">
+  return (
+    <div className="bg-[#0D0D0D]">
+      <div className="flex flex-row  max-w-6xl  mx-auto items-center pt-14 gap-14 ">
         <div className="flex md:w-2 flex-col items-center gap-5">
           <div className="w-[2px] bg-white h-40"></div>
           <div className="flex flex-col gap-5">
@@ -43,7 +43,8 @@ const Banner = () => {
           <img src={bannerImage} alt="" />{" "}
         </div>
       </div>
-    );
-}
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;

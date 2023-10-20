@@ -6,14 +6,14 @@ import about3 from "../../assets/images/about3.png";
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-row items-center mt-36 gap-14 ">
+    <div className="flex bg-[#0D0D0D] flex-row items-center pt-36 gap-14 ">
       <div className="flex md:w-2 flex-col items-center gap-5"></div>
       <div className="md:w-5/12">
         <h4 className="font-great-vibes text-heading-4 text-primary-2 mb-2">
           About Us
         </h4>
         <h2 className="text-heading-2 font-overpress font-bold leading-heading-2 mb-8">
-          <span className="text-primary-2 ">We </span>Create the best<br></br>{" "}
+          <span className="text-primary-2 ">We </span>Create the best<br></br>
           Foody Product
         </h2>
         <p className="font-inter text-normal font-normal leading-normal mb-6">
