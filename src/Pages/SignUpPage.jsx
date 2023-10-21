@@ -25,7 +25,7 @@ const SignUpPage = () => {
   };
   return (
     <>
-      <div className="text-black-1 mt-20 mb-40 rounded-md mx-auto w-[400px] p-8 shadow-2xl shadow-primary-2">
+      <div className="text-black-1 mt-20 mb-40 rounded-md mx-auto w-[400px] p-8 shadow-2xl shadow-primary-1">
         <form onSubmit={handleLogin} action="" className="">
           <h5 className="text-heading-6 mb-8 font-heading-6 font-bold">
             Sign Up
@@ -45,7 +45,7 @@ const SignUpPage = () => {
             />
           </div>
           <div
-            className="mt-4 relative rounded-sm items-center flex border
+            className="mt-4  relative rounded-sm items-center flex border
          border-gray-4 "
           >
             <AiOutlineMail className="absolute left-2 text-lg" />
