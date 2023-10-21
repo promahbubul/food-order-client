@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
+
 import Banner from "../components/Banner/Banner";
 import AboutUs from "../components/AboutUs/AboutUs";
 import FoodCategory from "../components/FoodCategory/FoodCategory";
-import HomeMenu from "../components/HomeMenu/HomeMenu";
+import FoodMenu from "../components/FoodMenu/FoodMenu";
 
 const HomePage = () => {
   return (
@@ -11,7 +11,8 @@ const HomePage = () => {
       <Banner />
       <AboutUs />
       <FoodCategory />
-      <HomeMenu />
+      <FoodMenu />
+      {/* <HomeMenu /> */}
     </div>
   );
 };
