@@ -5,11 +5,14 @@ import SignUpPage from "../Pages/SignUpPage";
 import MainLayout from "../Layout/MainLayout";
 import AddProduct from "../Pages/AddProduct";
 import MyCart from "../Pages/MyCart";
+import FoodDetails from "../Pages/FoodDetails";
+import ErrorPage from "../Pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -30,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUpPage />,
+      },
+      {
+        path: "/food-details",
+        element: <FoodDetails />,
       },
     ],
   },

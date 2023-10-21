@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     lineHeight: {
       "heading-1": "68px",
@@ -12,10 +9,10 @@ export default {
       "heading-4": "40px",
       "heading-5": "32px",
       "heading-6": "28px",
-      "lg": "28px",
-      "md": "26px",
-      "normal": "24px",
-      "small": "22px",
+      lg: "28px",
+      md: "26px",
+      normal: "24px",
+      small: "22px",
     },
     fontSize: {
       "heading-1": "60px",
@@ -24,21 +21,25 @@ export default {
       "heading-4": "32px",
       "heading-5": "24px",
       "heading-6": "20px",
-      "lg": "20px",
-      "md": "18px",
-      "normal": "16px",
-      "small": "14px",
+      lg: "20px",
+      md: "18px",
+      normal: "16px",
+      small: "14px",
     },
     fontFamily: {
-      'inter': ['Inter', "sans - serif"],
-      'overpass': ['Overpass', 'sans-serif'],
-      'heading-1': ['Overpass', 'sans-serif'],
-      'heading-2': ['Overpass', 'sans-serif'],
-      'heading-3': ['Overpass', 'sans-serif'],
-      'heading-4': ['Overpass', 'sans-serif'],
-      'heading-5': ['Overpass', 'sans-serif'],
-      'heading-6': ['Overpass', 'sans-serif'],
-      'great-vibes': ['Great Vibes', "cursive"],
+      inter: ["Inter", "sans - serif"],
+      overpass: ["Overpass", "sans-serif"],
+      "heading-1": ["Overpass", "sans-serif"],
+      "heading-2": ["Overpass", "sans-serif"],
+      "heading-3": ["Overpass", "sans-serif"],
+      "heading-4": ["Overpass", "sans-serif"],
+      "heading-5": ["Overpass", "sans-serif"],
+      "heading-6": ["Overpass", "sans-serif"],
+      "great-vibes": ["Great Vibes", "cursive"],
+    },
+    backgroundImage: {
+      "single-page-background":
+        "url('/assets/images/singlePageBackground.png')",
     },
     colors: {
       "gray-1": "#333333",
@@ -49,22 +50,18 @@ export default {
       "black-1": "#1E1E1E",
       "black-2": "#1D1D1D",
       "black-3": "#828282",
-      "white": "#FFFFFF",
-      "info": "#2F80ED",
-      "success": "#219653",
-      "warning": "#E2B93B",
-      "error": "#EB5757",
-      "primary": "#195A00",
-      "secondary": "#AF872F",
+      white: "#FFFFFF",
+      info: "#2F80ED",
+      success: "#219653",
+      warning: "#E2B93B",
+      error: "#EB5757",
+      primary: "#195A00",
+      secondary: "#AF872F",
       "primary-1": "#BC9A6C",
       "secondary-1": "#EDEAE3",
       "primary-2": "#FF9F0D",
-      "secondary-1": "#999966"
-    }
+      "secondary-1": "#999966",
+    },
   },
-  plugins: [
-    require("daisyui"),
-  ],
-
-}
-
+  plugins: [require("daisyui")],
+};
