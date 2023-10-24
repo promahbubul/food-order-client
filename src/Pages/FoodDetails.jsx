@@ -7,7 +7,7 @@ import galleryImage4 from "../assets/images/galleryImage4.png";
 import displayImage1 from "../assets/images/displayImage1.png";
 import PrimaryButton from "../components/PrimaryButton/PrimaryButton";
 import { PiBagLight } from "react-icons/pi";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const FoodDetails = () => {
   const food = useLoaderData();
@@ -73,7 +73,9 @@ const FoodDetails = () => {
               className="mask mask-star-2 checked:bg-primary-2 bg-primary-2"
             />
           </div>
-          <PrimaryButton text={"Add to cart"} icon={PiBagLight()} />
+          <Link to="/my-cart">
+            <PrimaryButton text={"Add to cart"} icon={PiBagLight()} />
+          </Link>
         </div>
       </div>
     </div>
