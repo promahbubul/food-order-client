@@ -11,7 +11,7 @@ import {
 const BottomFooter = () => {
   return (
     <div className="bg-primary-2 py-8">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
+      <div className="max-w-6xl mx-auto flex lg:flex-row flex-col lg:px-0 px-5 text-center gap-4 lg:gap-0 text-white justify-between items-center">
         <p className="text-normal font-normal font-inter">
           Copyright © 2022 by Mahbubul Alam. All Rights Reserved.
         </p>

@@ -7,6 +7,9 @@ import AddProduct from "../Pages/AddProduct";
 import MyCart from "../Pages/MyCart";
 import FoodDetails from "../Pages/FoodDetails";
 import ErrorPage from "../Pages/ErrorPage";
+import UpdateFood from "../Pages/UpdateFood";
+import Users from "../Pages/Users";
+import PrivetRoute from "./PrivetRoute";
 
 const router = createBrowserRouter([
   {
@@ -17,14 +20,34 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+        loader: () => fetch("https://food-order-server-three.vercel.app/menu"),
       },
       {
         path: "/add-product",
-        element: <AddProduct />,
+        element: (
+          <PrivetRoute>
+            <AddProduct />
+          </PrivetRoute>
+        ),
+      },
+      {
+        path: "/update-food/:id",
+        element: (
+          <PrivetRoute>
+            <UpdateFood />
+          </PrivetRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`https://food-order-server-three.vercel.app/menu/${params.id}`),
       },
       {
         path: "/my-cart",
-        element: <MyCart />,
+        element: (
+          <PrivetRoute>
+            <MyCart />
+          </PrivetRoute>
+        ),
+        loader: () => fetch("https://food-order-server-three.vercel.app/menu"),
       },
       {
         path: "/signin",
@@ -35,8 +58,19 @@ const router = createBrowserRouter([
         element: <SignUpPage />,
       },
       {
-        path: "/food-details",
-        element: <FoodDetails />,
+        path: "/food-details/:id",
+        element: (
+          <PrivetRoute>
+            <FoodDetails></FoodDetails>
+          </PrivetRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`https://food-order-server-three.vercel.app/menu/${params.id}`),
+      },
+      {
+        path: "/users",
+        element: <Users />,
+        loader: () => fetch("https://food-order-server-three.vercel.app/user"),
       },
     ],
   },

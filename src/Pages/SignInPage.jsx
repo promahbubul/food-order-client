@@ -1,31 +1,60 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiLock } from "react-icons/bi";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../AuthContext/AuthProvider";
 
 const SignInPage = () => {
-  const { user, singIn, signInGoole } = useContext(AuthContext);
+  const [loginUser, setLoginUser] = useState(null);
+  const { user, singIn, signInGoole, loginInUser } = useContext(AuthContext);
+  const loacation = useLocation();
 
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
-    const form = new FormData(e.currentTarget);
-    console.log(e.currentTarget);
-    console.log(form.get("email"));
-    console.log(form.get("password"));
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    loginInUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        setLoginUser(result.user);
+        const user = {
+          email,
+          lastSignInTime: result.user?.metadata?.lastSignInTime,
+        };
+        // update laset loged at in the database
+        fetch("https://food-order-server-three.vercel.app/user/", {
+          method: "PATCH",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(user),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            navigate(loacation.state ? loacation.state : "/");
+          });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   const signInGoogle = () => {
     signInGoole()
       .then((result) => {
         console.log(result.user);
+        // user navigate after login
+        navigate(loacation.state ? loacation.state : "/");
       })
       .catch((error) => console.error(error));
   };
   return (
     <>
-      <div className="text-black-1 mt-20 mb-40 rounded-md mx-auto w-[400px] p-8 shadow-2xl shadow-primary-1">
+      <div className="text-black-1 md:mt-20 my-8 mx-2 md:mb-40 rounded-md md:mx-auto md:w-[400px] p-8 shadow-2xl shadow-primary-1">
         <form onSubmit={handleLogin} action="" className="">
           <h5 className="text-heading-6 mb-8 font-heading-6 font-bold">
             Sign In
@@ -41,7 +70,6 @@ const SignInPage = () => {
               type="email"
               name="email"
               required
-              id=""
             />
           </div>
           <div
@@ -55,7 +83,6 @@ const SignInPage = () => {
               type="password"
               required
               name="password"
-              id=""
             />
           </div>
           <input

@@ -6,15 +6,15 @@ import footerBg from "../../assets/images/footerbg.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#0D0D0D] pt-20">
+    <div className="bg-[#0D0D0D] pt-20 lg:px-0 px-5">
       <div className="py-10 mt-36l  max-w-6xl   mx-auto">
-        <div className="flex flex-row justify-around items-center border-primary-2 pb-14 mb-16 border-b">
-          <div className="">
-            <h4 className="text-heading-4 font-bold leading-heading-4 mb-4">
+        <div className="flex md:flex-row flex-col text-center  justify-around items-center  border-primary-2 pb-14 mb-16 border-b">
+          <div className="md:mb-0 mb-7">
+            <h4 className="text-heading-4 font-bold leading-heading-4 mb-4 text-white">
               <span className="text-primary-2">St</span>ill You Need Our Support
               ?
             </h4>
-            <p className="text-normal font-inter leading-normal">
+            <p className="text-normal text-white font-inter leading-normal">
               Don’t wait make a smart & logical quote here. Its pretty easy.
             </p>
           </div>
@@ -23,7 +23,7 @@ const Footer = () => {
               type="email"
               name="email"
               placeholder="Enter Your Email"
-              className="md:w-[450px] py-3 px-4 outline-none text-white placeholder:text-white rounded-sm bg-primary-2"
+              className="md:w-[450px] w-full  py-3 px-4 outline-none text-white placeholder:text-white rounded-sm bg-primary-2"
               id=""
             />
             <input
@@ -33,7 +33,7 @@ const Footer = () => {
             ></input>
           </div>
         </div>
-        <div className="flex flex-row justify-between ">
+        <div className="flex md:grid md:space-y-10 md:grid-cols-2 flex-col md:gap-0 lg:space-y-0 gap-8 text-white lg:flex-row justify-between ">
           <div className="space-y-6 w-full ">
             <h5 className="text-heading-5">About Us.</h5>
             <p className="w-[260px] text-left">

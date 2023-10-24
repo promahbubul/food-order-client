@@ -15,7 +15,7 @@ const HomeMenu = () => {
         <h4 className="font-great-vibes text-heading-4 text-primary-2 mb-2">
           Choose & pick
         </h4>
-        <h2 className="text-heading-2 font-overpress font-bold leading-heading-2 mb-8">
+        <h2 className="md:text-heading-2 text-heading-4 font-overpress font-bold leading-heading-2 mb-8 text-white ">
           <span className="text-primary-2 ">Fr</span>om Our Menu
         </h2>
 

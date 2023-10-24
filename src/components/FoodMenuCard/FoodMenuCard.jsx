@@ -1,16 +1,22 @@
 import React from "react";
-import food from "../../assets/images/food.png";
+import food1 from "../../assets/images/food.png";
 
-const FoodMenuCard = () => {
+const FoodMenuCard = ({ food }) => {
+  const { name, price, photo } = food;
   return (
-    <div className="cursor-pointer bg-gray-5 p-3 rounded-sm">
-      <img src={food} alt="" className="" />
-      <p className="text-gray-1 font-bold font-inter  text-md leading-md">
-        Chocolate Muffin
-      </p>
-      <p className="text-primary-2  font-normal text-normal font-inter leading-normal">
-        $28.00
-      </p>
+    <div
+      className="cursor-pointer h-[350px] flex justify-between flex-col bg-white
+     p-4 rounded-sm"
+    >
+      <img src={photo} alt="" className="w-full h-[200px] mb-3" />
+      <div className="">
+        <p className="text-gray-1 font-bold font-inter  text-md leading-md">
+          {name}
+        </p>
+        <p className="text-primary-2  font-normal text-normal font-inter leading-normal">
+          $ {price}
+        </p>
+      </div>
     </div>
   );
 };
